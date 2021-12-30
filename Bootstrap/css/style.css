@@ -1,0 +1,76 @@
+
+/* Navbar style */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+
+.navbar a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block
+}
+
+.navbar a:hover {
+    font-weight: bold;
+    background-color: rgba(179, 88, 88, 0.178);
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+body {
+    background-image: url(../img/sunrise.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 60px;
+}
+
+h2 {
+    text-decoration: underline coral;
+    color: white;
+    text-align: center;
+    margin: 15px;
+}
+
+h4 {
+    color: white;
+    margin-left: 10px;
+}
+
+/* Stuff style*/
+
+.content {
+    display: grid;
+    grid-template-columns: auto 50%;
+    margin-left: 10px;
+    padding-bottom: 60px;
+}
+
+.accordion {
+    margin-left: 1vw;
+    width: 50vw;
+}
+
+
+footer {
+    padding: 17px;
+    text-align: right;
+    color: white;
+    background-color: #333;
+    min-height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
