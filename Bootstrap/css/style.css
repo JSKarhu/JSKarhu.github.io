@@ -69,6 +69,7 @@ h4 {
 .card {
     background-color: rgba(201, 91, 245, 0.753);
     border-radius: 20px;
+    height: fit-content;
 }
 
 .card a {
@@ -80,6 +81,15 @@ h4 {
     width: 50vw;
 }
 
+.accordion a {
+    text-decoration: none;
+    color: black;
+}
+
+.accordion a:hover {
+    font-weight: bold;
+    
+}
 
 footer {
     padding: 10px;
