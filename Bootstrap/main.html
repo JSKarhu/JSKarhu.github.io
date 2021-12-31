@@ -10,8 +10,8 @@
 
     <!-- Own CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>My page</title>
   </head>
 
     <body>
@@ -20,38 +20,45 @@
         <div class="navbar">
             <ul class="nav">
                 <li class="active"><a href="main.html">Home</a></li>
-                <li><a href="pages/first.html">First</a></li>
-                <li><a href="pages/second.html">Second</a></li>
+                <li><a href="pages/about_me.html">About Me</a></li>
+                <li><a href="pages/dog_page.html">My Dog</a></li>
             </ul>
         </div>
 
     <div class="page-container">
         <div class="content-wrap">
-        <h2>Welcome to my page!</h2>
-
-        <h4>Here is some info about the pages:</h4>
-        <section class="accordion">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  My dog
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">This page contains pictures and information about my dog. There also is an important question that i highly suggest you answer.</div>
-              </div>
+        <h1>Welcome to <span>myspace</span> my page!</h1>
+        <section class="content">
+        <div class="card" style="width: 30vw;">
+            <div class="card-body">
+              <h5 class="card-title">Who am i?</h5>
+              <p class="card-text">That is a very philosophical question. But since you <span>didn't ask</span> asked, my name is Joona. I'm 24 year old and i currently study programming in OAMK. In this site i will tell you a little bit about myself, about my hobbies and most importantly about my dog.</p>
+              <a href="https://www.oamk.fi/en/" class="card-link">OAMK</a>
             </div>
+          </div>
+        <section class="accordion">
+        <h4>Here is some info about the pages and their content:</h4>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Page #2
+                  My hobbies
                 </button>
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                <div class="accordion-body">On this page i tell little bit about myself and my hobbies.</div>
               </div>
             </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    My dog
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">This page contains pictures and information about my dog. There also is an important question that i highly suggest you answer.</div>
+                </div>
+              </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -65,9 +72,9 @@
           </div>
     </section>
     </div>
-
+</section>
     <footer>
-        <div class="copyright">Moikka</div>
+        <a class="photo" href="https://en.wikipedia.org/wiki/Pineapple" title="photo" id="photo">Pineapple</a>
     </footer>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

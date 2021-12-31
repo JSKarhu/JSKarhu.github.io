@@ -1,0 +1,50 @@
+@media screen and (max-width: 1010px) {
+    /* Main page responsive styles*/
+    .content {
+        display: grid;
+        grid-template-columns: auto;
+        margin-right: auto;
+        margin-left: 20vw;
+        margin-bottom: 60px;
+    }
+
+    .card {
+        min-width: 62%;
+        margin-bottom: 10px;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    /* Hobbies page responsive styles */
+
+
+    /* Dog page responsive styles */
+    .carousel {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .d-block {
+        width: 70vw;
+        height: auto;
+    }
+
+    .question {
+        max-width: 90%;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .info {
+        display: block;
+        color: white;
+        background-color: rgba(7, 7, 32, 0.253);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+    }
+}

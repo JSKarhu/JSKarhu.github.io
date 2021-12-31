@@ -14,7 +14,7 @@ img {
 }
 
 .carousel {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     
 }
 
@@ -29,6 +29,10 @@ img {
     text-shadow: 2px 2px 4px #000000;
 }
 
+.info {
+    display: none;
+}
+
 .question {
     margin-left: auto;
     margin-right: auto;
@@ -38,4 +42,10 @@ img {
     color: white;
     border: groove #000000;
     border-radius: 5px;
+}
+
+
+#check {
+    
+    border-radius: 10px;
 }
