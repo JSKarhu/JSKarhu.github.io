@@ -1,3 +1,6 @@
+/* variables for font & link-decoration */
+/* mixin for certain links that have white font color & no decoration */
+/* mixin for background images */
 /* Navbar style */
 .navbar {
   overflow: hidden;
@@ -7,8 +10,8 @@
 
 .navbar a {
   color: white;
-  padding: 14px 16px;
   text-decoration: none;
+  padding: 14px 16px;
   font-size: 17px;
   display: block;
 }
@@ -21,6 +24,7 @@
   transition: 0.2s ease-in-out;
 }
 
+/* content styles */
 body {
   background-image: url(../img/sunrise.png);
   background-size: cover;
@@ -58,7 +62,7 @@ h4 {
   margin-left: 2vw;
 }
 
-/* Stuff style*/
+/* content styles */
 .content {
   display: -ms-grid;
   display: grid;
@@ -76,8 +80,8 @@ h4 {
 }
 
 .card a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 .accordion {
@@ -93,6 +97,7 @@ h4 {
   font-weight: bold;
 }
 
+/* footer styles */
 footer {
   padding: 10px;
   background-color: #333;
@@ -105,11 +110,11 @@ footer {
 .photo {
   margin-left: 94vw;
   background-image: url("../img/pineapple.png");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: auto;
   min-height: 45px;
   text-indent: -9999px;
-  background-repeat: no-repeat;
   display: block;
 }
 /*# sourceMappingURL=build_styles.css.map */

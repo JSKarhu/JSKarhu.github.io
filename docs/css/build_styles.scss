@@ -1,31 +1,52 @@
+/* variables for font & link-decoration */
+
+$font-color: white;
+$link-decoration: none;
+$bg-color: #333;
+
+/* mixin for certain links that have white font color & no decoration */
+
+@mixin link ($link: white) {
+    color: $link;
+    text-decoration: none;
+
+}
+/* mixin for background images */
+
+@mixin background {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* Navbar style */
+
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: $bg-color;
     position: relative;
+
+    a {
+        @include link;
+        padding: 14px 16px;
+        font-size: 17px;
+        display: block
+    }
+    
+    a:hover {
+        font-weight: bold;
+        background-color: rgba(179, 88, 88, 0.178);
+        border-radius: 15px;
+        transition: 0.2s ease-in-out;
+    }
 }
 
 
-.navbar a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block
-}
-
-.navbar a:hover {
-    font-weight: bold;
-    background-color: rgba(179, 88, 88, 0.178);
-    border-radius: 15px;
-    transition: 0.2s ease-in-out;
-}
+/* content styles */
 
 body {
     background-image: url(../img/sunrise.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include background;
+    
 }
 
 .page-container {
@@ -43,7 +64,7 @@ h1 {
 }
 
 h1, h2 {
-    color: white;
+    color: $font-color;
     text-align: center;
     margin: 15px;
 }
@@ -53,11 +74,11 @@ span {
 }
 
 h4 {
-    color: white;
+    color: $font-color;
     margin-left: 2vw;
 }
 
-/* Stuff style*/
+/* content styles */
 
 .content {
     display: grid;
@@ -70,30 +91,33 @@ h4 {
     background-color: rgba(201, 91, 245, 0.753);
     border-radius: 20px;
     height: fit-content;
+
+    a {
+        @include link;
+    }
 }
 
-.card a {
-    text-decoration: none;
-    color: white;
-}
 
 .accordion {
     width: 50vw;
-}
 
-.accordion a {
-    text-decoration: none;
-    color: black;
-}
-
-.accordion a:hover {
-    font-weight: bold;
+    a {
+        text-decoration: $link-decoration;
+        color: black;
+    }
     
+    a:hover {
+        font-weight: bold;
+        
+    }
 }
+
+
+/* footer styles */
 
 footer {
     padding: 10px;
-    background-color: #333;
+    background-color: $bg-color;
     min-height: 60px;
     width: 100%;
     position: absolute;
@@ -103,10 +127,9 @@ footer {
 .photo {
     margin-left: 94vw;
     background-image: url('../img/pineapple.png');
-    background-size: contain;
+    @include background;
     padding: auto;
     min-height: 45px;
     text-indent:-9999px;
-    background-repeat: no-repeat;
     display: block;
 }
