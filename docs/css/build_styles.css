@@ -26,6 +26,7 @@
 
 /* content styles */
 body {
+  width: 100%;
   background-image: url(../img/sunrise.png);
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,6 +1,4 @@
-
-
-
+/* styles for dog page */
 .content {
     width: 50vw;
     margin-top: 50vh;
@@ -29,6 +27,8 @@ img {
     text-shadow: 2px 2px 4px #000000;
 }
 
+/* hidden info section, becomes visible when carousel captions disappear */
+
 .info {
     display: none;
 }
@@ -46,6 +46,5 @@ img {
 
 
 #check {
-    
     border-radius: 10px;
 }

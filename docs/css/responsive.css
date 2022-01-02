@@ -1,5 +1,8 @@
+
+/* responsive styles for all pages */
 @media screen and (max-width: 1010px) {
-    /* Main page responsive styles*/
+
+    /* Main page responsive styles */
     .page-container {
         position: relative;
         min-height: 100vh;
@@ -18,11 +21,13 @@
         margin-bottom: 10px;
     }
 
+    /* hide footer image and link in all pages */
     .photo {
         display: none;
     }
 
     /* Hobbies page responsive styles */
+    /* hide images */
     .image-section {
         display: none;
         
@@ -61,7 +66,10 @@
     }
 }
 
+/* additional Dog page responsive styles */
 @media screen and (max-width: 767px) {
+
+    /* info element becomes visible when carousel captions disappear */
     .info {
         display: block;
         color: white;

@@ -1,4 +1,4 @@
-
+/* styles for hobbies page */
 .content {
     display: grid;
     grid-template-columns: auto;
@@ -42,6 +42,8 @@ article a {
     border-radius: 10px;
 }
 
+
+/* elements with hide class are hidden when page is loaded, change visibility of elements based on the chosen radio button */
 .hide {
     display: none;
 }

@@ -44,6 +44,7 @@ $bg-color: #333;
 /* content styles */
 
 body {
+    width: 100%;
     background-image: url(../img/sunrise.png);
     @include background;
     
